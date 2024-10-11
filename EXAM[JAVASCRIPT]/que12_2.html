@@ -1,0 +1,31 @@
+<!-- Create a function that generates a random number between 1 and 100.
+ If the number is even, log "Even"; if it's odd, log "Odd". Use a combination of 
+ if-else and the modulus operator. -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        function checkParity() {
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            console.log(`Random Number: ${randomNumber}`);
+
+           if (randomNumber % 2 === 0) {
+               console.log("Even");
+            } else {
+               console.log("Odd");
+            }
+        }
+
+
+        checkParity();
+
+    </script>
+ </body>
+ </html>

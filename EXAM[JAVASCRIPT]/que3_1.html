@@ -1,0 +1,58 @@
+<!-- declare a variable using var, let and const. show the scope differences by logging them inside and outside
+of a block(if or for loop). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var varVariable = "I am Var!";
+        let letVariable = "I am let!";
+        const constVariable = "I am Const!";
+
+        console.log("Outside block:");
+        console.log(varVariable); 
+        console.log(letVariable); 
+        console.log(constVariable); 
+
+        // If statement block
+        if (true) {
+           var varVariable = "Var inside if";
+           let letVariable = "Let inside if";
+           const constVariable = "Const inside if";
+
+            console.log("Inside if block:");
+            console.log(varVariable); 
+            console.log(letVariable); 
+            console.log(constVariable); 
+        }
+
+           console.log("Outside if block:");
+           console.log(varVariable); 
+           console.log(letVariable); 
+           console.log(constVariable);
+
+      // For loop block
+         for (var i = 0; i < 1; i++) {
+             var varVariable = "Var inside for";
+             let letVariable = "Let inside for";
+             const constVariable = "Const inside for";
+         
+             console.log("Inside for block:");
+             console.log(varVariable);  
+             console.log(letVariable); 
+             console.log(constVariable);
+         }
+
+         console.log("Outside for block:");
+         console.log(varVariable); 
+         console.log(letVariable); 
+         console.log(constVariable); 
+
+    </script>
+</body>
+</html>

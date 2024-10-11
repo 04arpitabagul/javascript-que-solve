@@ -1,0 +1,23 @@
+<!-- Write a function that takes an array of strings, 
+loops through them, and returns a new array containing only the strings that have more than 5 characters. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function filterLongStrings(arr) {
+           return arr.filter(str => str.length > 5);
+        }
+
+
+const strings = ["hello", "worldwide", "abc", "javascript", "short"];
+console.log(filterLongStrings(strings));
+
+    </script>
+</body>
+</html>

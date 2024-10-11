@@ -1,0 +1,36 @@
+<!-- write a function that demonstrate the difference between var and let inside a loop.
+show how var causes hoisting issues. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demonstrateVarLetDifference() {
+           console.log("Using var inside a loop:");
+  
+           for (var i = 0; i < 5; i++) {
+              setTimeout(() => {
+                console.log(`Var: i = ${i}`);
+              }, 1000);
+            }
+  
+          console.log("\nUsing let inside a loop:");
+  
+         for (let j = 0; j < 5; j++) {
+              setTimeout(() => {
+                console.log(`Let: j = ${j}`);
+              }, 1000);
+         }
+        }
+
+      demonstrateVarLetDifference();
+
+
+    </script>
+</body>
+</html>

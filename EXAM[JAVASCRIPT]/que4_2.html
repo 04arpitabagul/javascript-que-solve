@@ -1,0 +1,27 @@
+<!-- Write a script that declares a global variable and a local variable inside a function. log both
+  variable from inside 
+   and outside the function to show scope differences -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var globalVariable = "Hi";
+        
+
+        function myFunc(){
+            var localVariable = "Bye";
+            
+            console.log(globalVariable);
+            console.log(localVariable);
+        }
+            console.log(globalVariable);
+            console.log(localVariable);
+    </script>
+</body>
+</html>

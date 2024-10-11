@@ -1,0 +1,27 @@
+<!-- Create a program that checks the current day of the week using a switch statement
+ and logs whether it is a weekday or a weekend. -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let d = prompt("Enter the Day:(in lower keys)");
+
+        if(d == "monday" || d == "tuesday" || d == "wednesday" || d == "thursday" || d == "friday" ){
+          console.log("WEEKDAY");
+        }
+        else if(d == "saturday" || d == "sunday"){
+            console.log("WEEKEND");
+        }
+        else{
+            console.log("Error!");
+        }
+    </script>
+ </body>
+ </html>
